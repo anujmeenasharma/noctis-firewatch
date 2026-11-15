@@ -6,7 +6,7 @@ const host = Host_Grotesk({ variable: "--font-host-grotesk", subsets: ["latin"],
 const mono = DM_Mono({ variable: "--font-dm-mono", subsets: ["latin"], weight: ["400", "500"], display: "swap" });
 
 export const metadata = {
-  title: "NOCTIS FireWatch — Live fire map and fire seasons for India",
+  title: "NOCTIS CENTAURI — Live fire map and fire seasons for India",
   description:
     "Where is India burning right now? Live NASA satellite fire detections, eight years of fire seasons by state, why satellites count fires differently, and what you can do about smoke and stubble burning.",
 };

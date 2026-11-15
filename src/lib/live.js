@@ -72,7 +72,7 @@ function parse(csv, key) {
 export async function fetchLive() {
   const results = await Promise.allSettled(
     FEEDS.map(async (f) => {
-      const r = await fetch(f.url, { next: { revalidate: 1800 }, headers: { "User-Agent": "noctis-firewatch" } });
+      const r = await fetch(f.url, { next: { revalidate: 1800 }, headers: { "User-Agent": "noctis-centauri" } });
       if (!r.ok) throw new Error(`${f.key} ${r.status}`);
       return { key: f.key, points: parse(await r.text(), f.key) };
     })

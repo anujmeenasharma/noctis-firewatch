@@ -1,4 +1,4 @@
-# NOCTIS FireWatch — India
+# NOCTIS CENTAURI — India fire watch
 
 Live fire map, fire seasons and the MODIS ↔ VIIRS harmonization problem, explained for everyone.
 Built on NASA FIRMS data for the NASA Space Apps Challenge (Harmonization of MODIS and VIIRS hot spots).

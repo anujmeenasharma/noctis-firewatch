@@ -45,7 +45,7 @@ export default function Nav() {
             <span className="h-2.5 w-2.5 rounded-full bg-ember" />
           </span>
           <span className="leading-none">
-            <span className="block text-[0.95rem] font-semibold tracking-[-0.02em]">NOCTIS FireWatch</span>
+            <span className="block text-[0.95rem] font-semibold tracking-[-0.02em]">NOCTIS CENTAURI</span>
             <span className="mono mt-0.5 block !text-[0.6rem] text-stone">India · NASA satellite fires</span>
           </span>
         </a>
