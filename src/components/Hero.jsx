@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsap";
@@ -85,12 +86,12 @@ export default function Hero() {
             about the smoke.
           </p>
           <div className="h-in mt-8 flex flex-wrap gap-3">
-            <a href="#near" className="btn btn-fire">
+            <Link href="/near-me" className="btn btn-fire">
               Is there fire near me? <span aria-hidden>→</span>
-            </a>
-            <a href="#live" className="btn btn-ghost">
+            </Link>
+            <Link href="/live-map" className="btn btn-ghost">
               Open the live map
-            </a>
+            </Link>
           </div>
 
           {/* Live numbers */}

@@ -7,7 +7,7 @@ Built on NASA FIRMS data for the NASA Space Apps Challenge (Harmonization of MOD
 
 ```bash
 npm install
-npm run dev        # http://localhost:3300
+npm run dev        # http://localhost:3300 (Turbopack)
 ```
 
 ## Refresh the data
@@ -26,17 +26,19 @@ The archive (2018–2025) is built from NASA FIRMS yearly country files for Indi
 The live map needs no build step: `/api/live` reads NASA's public 7-day South Asia feeds on the server
 (cached 30 min) and falls back to `public/data/live-snapshot.json` if NASA can't be reached.
 
-## What's on the page
+## Pages
 
-| Section | Question it answers |
+`/` is a short overview (live numbers + one card per question). Each topic has its own page:
+
+| Page | Question it answers |
 |---|---|
-| Live fire map | Where is India burning this week? |
-| Near me | Is there fire near a city / my location, and what should I do? |
-| Fire seasons | When does each state burn? (calendar + month-by-month map) |
-| Trends | Is it getting better or worse, by season and state? |
-| Satellites | Why MODIS and VIIRS counts differ + a converter between them |
-| Solutions | Practical steps for farmers, citizens, officials, researchers (sourced) |
-| Data & method | Sources, processing steps, downloads, caveats |
+| `/live-map` | Where is India burning this week? |
+| `/near-me` | Is there fire near a city / my location, and what should I do? |
+| `/fire-seasons` | When does each state burn? (calendar + month-by-month map) |
+| `/trends` | Is it getting better or worse, by season and state? |
+| `/satellites` | Why MODIS and VIIRS counts differ + a converter between them |
+| `/solutions` | Practical steps for farmers, citizens, officials, researchers (sourced) |
+| `/data` | Sources, processing steps, downloads, caveats |
 
 ## Notes
 - Only vegetation fires (FIRMS type 0) are counted; static industrial heat sources are removed.

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useData, fmt, fmt1, PRODUCTS } from "@/lib/data";
 import { useLive } from "@/lib/useLive";
@@ -165,9 +166,9 @@ export default function LiveMap() {
                   </div>
                 ))}
               </div>
-              <a href="#near" className="btn btn-ghost mt-6 w-full">
+              <Link href="/near-me" className="btn btn-ghost mt-6 w-full">
                 Check a place in {detail.name} →
-              </a>
+              </Link>
             </div>
           ) : (
             <div className="card p-5">

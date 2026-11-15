@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useData, fmt, fmt1, km, timeAgo, MONTHS_LONG, stateMonthProfile, PRODUCTS } from "@/lib/data";
 import { useLive } from "@/lib/useLive";
@@ -255,9 +256,9 @@ export default function NearMe() {
                       </>
                     )}
                   </p>
-                  <a href="#seasons" className="mt-4 inline-block text-sm text-ember hover:underline">
+                  <Link href="/fire-seasons" className="mt-4 inline-block text-sm text-ember hover:underline">
                     See every state's fire calendar →
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
